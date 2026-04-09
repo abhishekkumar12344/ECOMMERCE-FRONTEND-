@@ -3,6 +3,7 @@ import axios from 'axios';
 const API = axios.create({
   baseURL: "https://ecommerce-backend-6yw4.onrender.com/api" ,   // ✅ FIXED
   timeout: 15000 ,
+   withCredentials: true 
 });
 
 // Attach JWT token
